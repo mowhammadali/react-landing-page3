@@ -1,0 +1,67 @@
+
+ @import"Variables";
+ @import"Mixin.scss";
+
+.card{
+    background-color: #f6f6f6;
+    border-radius:20px;
+    box-shadow:  10px 10px 20px #c7c7c7,
+             -10px -10px 20px #f9f9f9;
+ 
+    img{
+        width: 260px;
+        margin-bottom: 12px;
+        border-radius:20px 20px 0 0;
+        -webkit-border-radius:20px 20px 0 0;
+        -moz-border-radius:20px 20px 0 0;
+        -ms-border-radius:20px 20px 0 0;
+        -o-border-radius:20px 20px 0 0;
+
+        @include media(1200){
+            width: 200px;
+        }
+        @include media(992){
+            width: 240px;
+        }
+    }
+
+    h1{
+        @include textStyle(20px , bold , $secondaryTextColor);
+        margin: 0 0 20px 20px;
+    }
+
+    p{
+        @include textStyle(16px , bold , $secondaryTextColor);
+        margin:0 0 30px 20px;
+    }
+
+    .calculator{
+        @include display(flex , flex-start , center);
+        gap: 15px;
+        padding: 20px;
+        border-top: 1px solid gray;
+    }
+}
+
+.calculator{
+    img{
+        @include measure(20px , 20px);
+        cursor: pointer;
+    }
+
+    span{
+        @include display(flex , center , center);
+        background-color: $reactColor;
+        @include measure(30px , 30px);
+        margin-bottom: 10px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+}
+
+.calculator.unactive{
+    background-color: aqua;
+}

@@ -1,0 +1,76 @@
+.container {
+  width: 100%;
+  height: "";
+  position: relative;
+}
+.container img {
+  width: 100%;
+}
+.container .textContainer {
+  position: absolute;
+  top: 140px;
+  left: 100px;
+}
+@media (max-width: 992px) {
+  .container .textContainer {
+    top: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .container .textContainer {
+    top: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .container .textContainer {
+    top: 30px;
+    left: 50px;
+  }
+}
+
+.textContainer h1 {
+  font-size: 80px;
+  font-weight: bold;
+  color: #229278;
+  margin-bottom: 20px;
+}
+@media (max-width: 992px) {
+  .textContainer h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .textContainer h1 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 576px) {
+  .textContainer h1 {
+    font-size: 20px;
+  }
+}
+.textContainer p {
+  font-size: 50px;
+  font-weight: "";
+  color: #229278;
+}
+@media (max-width: 992px) {
+  .textContainer p {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .textContainer p {
+    font-size: 25px;
+  }
+}
+@media (max-width: 576px) {
+  .textContainer p {
+    font-size: 16px;
+  }
+}
+.textContainer span {
+  color: #1c98ca;
+}
+
+/*# sourceMappingURL=Banner.module.css.map */

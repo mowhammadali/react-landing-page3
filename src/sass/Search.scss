@@ -1,0 +1,54 @@
+@import "Variables";
+@import "Mixin.scss";
+
+.container{
+    @include measure(100% , 220px);
+    @include display(flex , space-evenly , center);
+    background-color: $reactColor;
+
+    @include media(576){
+        flex-direction: column;
+    }
+
+    h1{
+        @include textStyle(40px , bold , #222);
+        @include media(992){
+            font-size: 30px;
+        }
+        @include media(768){
+            font-size: 22px;
+        }
+        @include media(576){
+            font-size: 30px;
+        }
+    }
+
+    .search{
+        @include display(flex , center , center);
+        flex-direction: column;
+    }
+
+    input{
+        @include measure(350px , 60px);
+        font-family: cursive;
+        border: none;
+        outline: none;
+        padding: 0 20px;
+        font-size: 28px;
+        color: #333;
+        border-radius: 20px;
+        margin-bottom: 10px;
+
+        @include media(992){
+            @include measure(300px , 50px);
+        }
+        @include media(768){
+            @include measure(240px , 40px);
+            font-size: 20px;
+        }
+        @include media(576){
+            @include measure(260px , 50px);
+            font-size: 22px;
+        }
+    }
+}

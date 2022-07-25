@@ -1,0 +1,13 @@
+@import "Variables";
+@import "Mixin.scss";
+
+.container{
+    @include display(flex , space-between , center);
+    padding: 70px 30px;
+
+    @include media(992){
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 40px;
+    }
+}

@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 30px;
+}
+@media (max-width: 992px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+  }
+}
+
+/*# sourceMappingURL=Cards.module.css.map */

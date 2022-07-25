@@ -1,0 +1,39 @@
+@mixin textStyle($fontSize , $fontWeight , $color) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    color: $color;
+}
+
+@mixin measure($width , $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin display($display , $justify , $align){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin media($width){
+    @if($width == 1200){
+        @media(max-width:1200px){
+            @content;
+        }
+    }
+    @else if($width == 992){
+        @media(max-width:992px){
+            @content;
+        }
+    }
+    @else if($width == 768){
+        @media(max-width:768px){
+            @content;
+        }
+    }
+    @else if($width == 576){
+        @media(max-width:576px){
+            @content;
+        }
+    }
+}

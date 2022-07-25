@@ -1,0 +1,64 @@
+@import "Variables";
+@import "Mixin.scss";
+
+.container{
+    @include measure(100% , "");
+    position: relative;
+
+    img{
+        width: 100%;
+    }
+
+    .textContainer{
+        position: absolute;
+        top: 140px;
+        left: 100px;
+
+        @include media(992){
+            top: 100px;
+        }
+        @include media(768){
+            top: 60px;
+        }
+        @include media(576){
+            top: 30px;
+            left: 50px;
+        }
+    }
+
+}
+
+.textContainer{
+    h1{
+        @include textStyle(80px , bold , $secondaryTextColor);
+        margin-bottom: 20px;
+
+        @include media(992){
+            font-size: 50px;
+        }
+        @include media(768){
+            font-size: 35px;
+        }
+        @include media(576){
+            font-size: 20px;
+        }
+    }
+
+    p{
+        @include textStyle(50px , "" , $secondaryTextColor);
+
+        @include media(992){
+            font-size: 40px;
+        }
+        @include media(768){
+            font-size: 25px;
+        }
+        @include media(576){
+            font-size: 16px;
+        }
+    }
+
+    span{
+        color: $reactColor;
+    }
+}

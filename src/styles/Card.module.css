@@ -1,0 +1,70 @@
+.card {
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px #c7c7c7, -10px -10px 20px #f9f9f9;
+}
+.card img {
+  width: 260px;
+  margin-bottom: 12px;
+  border-radius: 20px 20px 0 0;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -ms-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
+}
+@media (max-width: 1200px) {
+  .card img {
+    width: 200px;
+  }
+}
+@media (max-width: 992px) {
+  .card img {
+    width: 240px;
+  }
+}
+.card h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #229278;
+  margin: 0 0 20px 20px;
+}
+.card p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #229278;
+  margin: 0 0 30px 20px;
+}
+.card .calculator {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  border-top: 1px solid gray;
+}
+
+.calculator img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.calculator span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c98ca;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.calculator.unactive {
+  background-color: aqua;
+}
+
+/*# sourceMappingURL=Card.module.css.map */

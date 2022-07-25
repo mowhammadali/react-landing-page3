@@ -1,0 +1,19 @@
+.footer {
+  padding: 30px 0;
+  background-color: #c7c7c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1c98ca;
+}
+@media (max-width: 576px) {
+  .footer h1 {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=Footer.module.css.map */
